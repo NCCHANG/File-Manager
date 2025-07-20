@@ -5,7 +5,7 @@ namespace fs = std::filesystem;
 
 int main() {
     //conf
-    std::string manageDirectoryPath = "C:/Users/xuan/Downloads"; // path to the desired folder
+    std::string manageDirectoryPath = "C:/Users/xuan/Downloads"; // path to the desired folder to organize files
     //----
     fs::path basePath = manageDirectoryPath;
     for (const auto& entry : fs::directory_iterator(basePath)) { //loop through files in folder
